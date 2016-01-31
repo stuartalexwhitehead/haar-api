@@ -1,0 +1,22 @@
+{
+  "name": "haar-api",
+  "version": "0.0.0",
+  "description": "Haar API is a back-end implementation of Haar Engine",
+  "author": "Stuart Whitehead",
+  "scripts": {
+    "start": "node --use_strict index.js",
+    "test": "mocha"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartalexwhitehead/haar-api.git"
+  },
+  "dependencies": {
+    "haar-engine": "git+ssh://git@github.com/stuartalexwhitehead/haar-engine.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=5.5.0"
+  }
+}
