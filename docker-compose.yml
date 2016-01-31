@@ -1,0 +1,12 @@
+app:
+  container_name: haar-api_app
+  build: .
+  ports:
+    - "3000:3000"
+  volumes:
+    - .:/src
+  links:
+    - mongo
+mongo:
+  container_name: haar-api_mongo
+  image: mongo
