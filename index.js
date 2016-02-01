@@ -1,3 +1,7 @@
-var haar = require('haar-engine');
+let haar = require('haar-engine');
 
-haar.engine().listen(3000);
+haar.engine();
+haar.app.get('/', (req, res) => {
+  res.json('Haar API');
+});
+haar.server.listen(3000);
