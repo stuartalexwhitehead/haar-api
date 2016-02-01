@@ -1,4 +1,4 @@
-let haar = require('haar-engine');
+const haar = require('haar-engine');
 
 haar.engine();
 haar.app.get('/', (req, res) => {
