@@ -11,3 +11,4 @@ app:
 mongo:
   container_name: haar-api_mongo
   image: mongo
+  command: mongod --auth 
