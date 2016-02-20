@@ -20,4 +20,4 @@ RUN cd /src; npm install;
 
 # Runtime
 EXPOSE 3000
-CMD ["node", "/src/index.js"]
+CMD cd /src; npm start;
