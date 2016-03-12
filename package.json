@@ -4,7 +4,7 @@
   "description": "Haar API is a back-end implementation of Haar Engine",
   "author": "Stuart Whitehead",
   "scripts": {
-    "start": "node --use_strict --harmony_default_parameters index.js",
+    "start": "node --use_strict --harmony_default_parameters --harmony_destructuring index.js",
     "test": "mocha",
     "eslint": "node_modules/eslint/bin/eslint.js --ext .jsx,.js $(git status --porcelain -uno | egrep '.js(x)?$' | egrep '^M|^A' | sed 's/^.* //g' | tr '\n' ' ')"
   },
