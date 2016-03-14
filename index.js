@@ -1,9 +1,18 @@
 const haar = require('haar-engine');
 
-process.env.MONGO_HOST = process.env.HAAR_MONGO_PORT_27017_TCP_ADDR;
+haar.init({
+  MONGO: {
+    HOST: process.env.MONGO__HOST,
+    USERNAME: process.env.MONGO__USERNAME,
+    PASSWORD: process.env.MONGO__PASSWORD,
+  },
+  JWT: {
+    SECRET: process.env.JWT__SECRET,
+  },
+});
 
-haar.init();
 haar.app.get('/', (req, res) => {
   res.json('Haar API');
 });
+
 haar.server.listen(3000);
